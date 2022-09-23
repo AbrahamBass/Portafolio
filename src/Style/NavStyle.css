@@ -1,0 +1,35 @@
+.color {
+  width: 140px;
+  border-top: 2px solid gray;
+  margin-top: 30px;
+  text-align: center;
+  color: gray;
+ }
+
+ .color:hover {
+  color: #00ffd5;
+ }
+
+.borde {
+  border-top: 2px solid gray;
+  width: 140px;
+  text-align: center;
+  color: gray;
+}
+
+.borde:hover{
+  color: #00ffd5;
+}
+
+.set{
+  color: #00ffd5;
+  font-weight: 200;
+}
+
+.lg-text {
+  color: #00ffd5;
+  font-weight: 700;
+}
+
+
+

@@ -1,0 +1,16 @@
+.div-componente {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.img-componente {
+  width: 45px;
+}
+
+.titulo-tecnologia {
+  color: white;
+  font-weight: 500;
+  margin-left: 10px;
+}

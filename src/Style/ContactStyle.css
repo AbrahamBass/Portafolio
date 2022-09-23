@@ -1,0 +1,114 @@
+.leaflet-container {
+  max-width: 600px;
+  height: 600px;
+}
+
+
+.contenedor-contact {
+  margin-left: 150px;
+  padding: 40px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.div-titulo-contact::before {
+  content: "<h1>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.div-titulo-contact::after {
+  content: "</h1>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.div-parrafo-contact::before {
+  content: "<p>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.div-parrafo-contact::after {
+  content: "</p>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.titulo-contact {
+  color: #00ffd5;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.parrafo-contact {
+  color: #fff;
+}
+
+.div-iconos-contact {
+  display: flex;
+}
+
+.menu-icon-contact {
+  display: none;
+}
+
+.div-iconos-contact::before {
+  content: "<a>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  align-items: center;
+  display: flex;
+  margin-right: 10px;
+}
+
+.div-iconos-contact::after {
+  content: "</a>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+}
+
+.close-contact {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .contenedor-contact {
+    margin-left: 0;
+    padding: 40px 50px;
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+
+  .menu-destok-contact {
+    display: none;
+  }
+
+  .mapa {
+    margin-top: 30px;
+  }
+
+  .menu-icon-contact {
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .mapa-close {
+    display: none;
+  }
+  
+  
+}

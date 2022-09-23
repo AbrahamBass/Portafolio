@@ -1,0 +1,132 @@
+.contenedor-skill {
+  margin-left: 150px;
+  padding: 40px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.titulo-skill {
+  font-size: 70px;
+  font-weight: 900;
+  color: #00ffd5;
+}
+
+.div-animacion {
+  max-width: 100%;
+  height: 4px;
+  background-color: #141414;
+  border-radius: 2px;
+}
+
+.animacion-uno {
+  max-width: 70%;
+  height: 4px;
+  background-color: #cc2424;
+  border-radius: 2px;
+}
+
+.animacion-dos {
+  max-width: 60%;
+  height: 4px;
+  background-color: #2480cc;
+  border-radius: 2px;
+}
+
+.animacion-tres {
+  max-width: 65%;
+  height: 4px;
+  background-color: #f0ff1d;
+  border-radius: 2px;
+}
+
+.animacion-cuatro {
+  max-width: 70%;
+  height: 4px;
+  background-color: #0d5dc7;
+  border-radius: 2px;
+}
+
+.animacion-cinco {
+  max-width: 70%;
+  height: 4px;
+  background-color: #dd3d28;
+  border-radius: 2px;
+}
+
+.animacion-seis {
+  max-width: 85%;
+  height: 4px;
+  background-color: #2cd1d1;
+  border-radius: 2px;
+}
+
+.parrafo-skill {
+  color: #fff;
+}
+
+.div-parrafo-skill::before {
+  content: "<p>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+.div-parrafo-skill::after {
+  content: "</p>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.div-titulo-skillo::before {
+  content: "<h1>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.div-titulo-skillo::after {
+  content: "</h1>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.color-a {
+  color: #00ffd5;
+}
+
+.close-skill {
+  display: none;
+}
+
+.icono-skill {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .icono-skill {
+    display: block;
+    background-color: #191919;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .contenedor-skill {
+    margin-left: 0px;
+    padding: 40px 50px;
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+
+  .div-menu-destok {
+    display: none;
+  }
+}
+@media screen and (max-width: 430px){
+  .titulo-skill {
+    font-size: 50px;
+  }
+}

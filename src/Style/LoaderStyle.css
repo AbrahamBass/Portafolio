@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Roboto:wght@500&display=swap');
+
+.contenedor-animation {
+  max-width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center; 
+  justify-items: center; 
+
+}
+
+.div-animation {
+  display: grid;
+  justify-items: center;
+ 
+}
+
+.titulo-animation {
+  color: #fff;
+}
+
+.parrafo-animation {
+  color: gray;
+  font-family: 'Combo', cursive;
+}
+
+.loader {
+  width: 30%;
+  height: 3px;
+  display: inline-block;
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+  margin-top: 20px;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  width: 0;
+  height: 3px;
+  background: #00ffd5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animFw 2s linear infinite;
+}
+
+@keyframes animFw {
+  0% {
+    width: 0;
+  }
+  50%{
+    background: #E55381;
+  }
+  60%{
+    background: #E55381;
+  }
+  100% {
+    width: 100%;
+  }
+}

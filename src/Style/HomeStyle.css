@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@500&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+}
+
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 6px
+}
+
+.present::before {
+  content: "<h1>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.present::after {
+  content: "</h1>";
+  color: #404040;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.conteiner-principal {
+  background-color: #191919;
+  margin-left: 150px;
+  padding: 40px 50px;
+  height: 700px;
+  z-index: 0;
+}
+
+.div-my-potfolio::before {
+  content: "<h1>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.div-my-potfolio::after {
+  content: "</h1>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.div-text-potfolio::before {
+  content: "<p>";  
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.div-text-potfolio::after {
+  content: "</p>";  
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+
+
+.div-icon {
+  display: none;
+  font-size: 25px;
+}
+
+
+.sect {
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+}
+
+.sect-logo {
+  display: flex;
+}
+
+
+.btn {
+  padding: 17px 40px;
+  color: #fff;
+  border: 0;
+  background-color: transparent;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all .5s ease;
+  border: 1px solid #00ffd5;
+ }
+ 
+ .btn:hover {
+  letter-spacing: 3px;
+  background-color: #00ffd5;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #00ffd5 0px 7px 29px 0px;
+ }
+
+
+ 
+ .btn:active {
+  letter-spacing: 3px;
+  background-color: #00ffd5;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #00ffd5 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+ }
+
+ .div-btn::before {
+  content: "<button>";
+  margin-bottom: 10px;
+  display: grid;
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+ }
+
+ .div-btn::after {
+  content: "</button>";
+  margin-top: 10px;
+  display: grid;
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+ }
+
+.text:hover {
+  color: #00ffd5;
+}
+
+.border-color {
+  border-top: 2px solid gray;
+}
+
+.border-set {
+  border-bottom: 2px solid gray;
+}
+
+
+
+.div-potfolio {
+  background-color: #191919;
+  color: white;
+  height: 500px;
+  margin-left: 150px;
+  padding: 60px;
+  background-size: auto;
+}
+
+
+
+.footer {
+  background-color: #191919;
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  background-size: auto;
+
+}
+
+.div-links {
+  display: flex;
+}
+
+.div-links::before {
+  content: "<a>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  margin-right: 10px;
+}
+
+.div-links::after {
+  content: "</a>";
+  color: #404040;
+  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  margin-left: 10px;
+}
+
+
+.text-portfolio {
+  color: #00ffd5;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.text-parrafo {
+  max-width: 800px;
+}
+
+.close {
+  display: none;
+}
+
+.open {
+  display: none;
+}
+
+
+@media screen and (max-width: 960px) {
+  .Menu-Deskto {
+    display: none;
+  }
+
+
+  .div-icon {
+    display: block;
+    background-color: #191919;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .sect {
+    font-size: 60px;
+    font-weight: 900;
+  }
+
+  .conteiner-principal {
+    margin-left: 0;
+    padding: 40px 30px;
+    height: 520px;
+    align-items: center;
+  }
+
+  .div-potfolio {
+    margin-left: 0;
+    padding: 30px;
+  }
+
+  .footer {
+    margin-left: 0;
+  }
+
+  .derechos {
+    margin-left: 0;
+  }
+
+  .text-portfolio {
+    font-size: 60px;
+    font-weight: 900;
+    
+  }
+
+} 
+
+@media screen and (max-width: 581px) {
+  .sect {
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .text-portfolio {
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .img {
+    width: 50px;
+  }
+ 
+}
+  
