@@ -17,6 +17,7 @@ export function ContextProvaider ({children}) {
   }
 
 
+
   return (
     <ContextsApp.Provider value={{
       menu,
@@ -26,7 +27,7 @@ export function ContextProvaider ({children}) {
       skillAnimation,
       setSkillAnimation,
       contactAnimation,
-      setContactAnimation
+      setContactAnimation,
     }}>
       {children}
     </ContextsApp.Provider>

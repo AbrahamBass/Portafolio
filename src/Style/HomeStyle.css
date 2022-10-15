@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@500&family=Ubuntu:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body{
-  /* font-family: 'Open Sans', sans-serif; */
-  /* font-family: 'Ubuntu', sans-serif; */
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -49,20 +49,6 @@ body::-webkit-scrollbar-thumb {
 
 .div-my-potfolio::after {
   content: "</h1>";
-  color: #404040;
-  font-size: 20px;
-  font-family: 'Caveat', cursive;
-}
-
-.div-text-potfolio::before {
-  content: "<p>";  
-  color: #404040;
-  font-size: 20px;
-  font-family: 'Caveat', cursive;
-}
-
-.div-text-potfolio::after {
-  content: "</p>";  
   color: #404040;
   font-size: 20px;
   font-family: 'Caveat', cursive;
@@ -169,6 +155,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   height: 130px;
   background-size: auto;
+  margin-top: 190px;
 
 }
 
@@ -211,12 +198,71 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
+.div-proyect{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-top: 15px;
+  gap: 5px;
+}
 
-@media screen and (max-width: 960px) {
+.img-proyect {
+  max-width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+
+.img-proyect:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.div-rick {
+  position: relative;
+}
+
+.div-iconos {
+  position: absolute;
+  display: flex;
+  left: 150px;
+  bottom: 0;
+  margin-bottom: 5px;
+}
+
+.div-gif {
+  position: relative;
+}
+
+
+.esconder {
+  display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 1020px) {
   .Menu-Deskto {
     display: none;
   }
 
+
+  .div-iconos {
+    position: absolute;
+    left: 110px;
+  }
+
+  .img-proyect {
+    max-width: 300px;
+    max-height: 200px
+  }
+
+  .div-gif {
+    margin-top: 10px;
+  }
 
   .div-icon {
     display: block;
@@ -269,6 +315,14 @@ body::-webkit-scrollbar-thumb {
 
 } 
 
+@media screen and (max-width: 681px) {
+  .div-proyect {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+}
+
 @media screen and (max-width: 581px) {
   .sect {
     font-size: 40px;
@@ -279,6 +333,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 40px;
     font-weight: 900;
   }
+
 
   .img {
     width: 50px;

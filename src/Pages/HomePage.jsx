@@ -12,11 +12,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 // I import the icons from React Icon
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa';
 
 // Imgs
 import logo from '../Img/logoAA.svg'
-
+import rick from '../Img/Rick.png'
+import gif from '../Img/gif.png'
+ 
 //I import the components
 import NavComponent from '../Components/NavComponent';
 import NavMovilComoponent from '../Components/NavMovilComoponent'
@@ -67,22 +69,31 @@ const HomePage = () => {
         <div >
           <div className="div-potfolio">
             <div >
-              <div>
-                <div className='div-my-potfolio'>
-                  <h1 className=' mt-4 text-portfolio'>My Portfolio</h1>
+              <div className='div-my-potfolio'>
+                <h1 className=' mt-4 text-portfolio'>My Projects</h1>
+              </div>
+   
+              <div className={menu ? 'esconder' : 'div-proyect'}>
+                <div className='div-rick'>
+                  <img src={rick} alt="img"  className="img-proyect" />
+                  <div className='div-iconos'>
+                    <a href="https://ricks-and-mortys-characters.netlify.app/" className='text-zinc-800 mr-3 text-4xl  '><FaExternalLinkAlt /></a>
+                    <a href="https://github.com/AbrahamBass/Personajes-Rick-And-Morty" className='text-zinc-800 text-4xl  '><FaGithub /></a>
+                  </div>
                 </div>
-                <div className='div-text-potfolio'>
-                  <p className='mt-4 text-parrafo'>My portfolio is made up of personal projects focused on Frontend. I am very passionate about creating things related to technology and art</p>
+
+                <div className='div-gif'>
+                    <img src={gif} alt="img"  className="img-proyect"/>
+                    <div className='div-iconos'>
+                    <a href="https://search-gifis.netlify.app/" className='text-zinc-800 text-4xl mr-3 '><FaExternalLinkAlt /></a>
+                    <a href="https://github.com/AbrahamBass/Search-Gif" className='text-zinc-800 text-4xl  '><FaGithub /></a>
+                  </div>
                 </div>
               </div>
 
-              <div>
-
-              </div>
             </div>
           </div>
-
-          </div>
+        </div>
 
           <div>
             <div className='footer'>

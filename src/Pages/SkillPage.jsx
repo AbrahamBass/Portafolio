@@ -13,6 +13,10 @@ import Js from '../Img/LogoTipos/js.png'
 import Reeact from '../Img/LogoTipos/physics.png'
 import Git from '../Img/LogoTipos/git.png'
 import Tailwind from '../Img/LogoTipos/tailwindcss-icon.svg'
+import TypeScipt from '../Img/LogoTipos/typescript.svg'
+import Angular from '../Img/LogoTipos/angularjs.svg'
+import Redux from '../Img/LogoTipos/redux.svg'
+import Rxjs from '../Img/LogoTipos/rxjs-1.svg'
 
 // Components
 import SkillComponent from '../Components/SkillComponent'
@@ -80,15 +84,12 @@ const SkillPage = () => {
             </div>
           </div>
 
-          <div>
+          <div className='skills'>
             <div>
-            <SkillComponent 
-            imagen={Html}
-            tecnologia='Html'
-            />
-            <div className='div-animacion'>
-                <div className='animacion-uno'></div>
-              </div>
+              <SkillComponent 
+              imagen={Html}
+              tecnologia='Html'
+              />
             </div>
 
             <div>
@@ -96,50 +97,65 @@ const SkillPage = () => {
               imagen={Css}
               tecnologia='Css'
               />
-              <div className='div-animacion'>
-                <div className='animacion-dos'></div>
-              </div>
             </div>
 
             <div>
               <SkillComponent 
               imagen={Js}
               tecnologia='JavaScript'
-              />
-              <div className='div-animacion'>
-                <div className='animacion-tres'></div>
-              </div>
+              />           
             </div>
 
             <div>
               <SkillComponent 
               imagen={Reeact}
               tecnologia='React'
-              />
-              <div className='div-animacion'>
-                <div className='animacion-cuatro'></div>
-              </div>
+              />             
             </div>
 
             <div>
               <SkillComponent 
               imagen={Git}
               tecnologia='Git'
-              />
-              <div className='div-animacion'>
-                <div className='animacion-cinco'></div>
-              </div>
+              />            
             </div>
 
             <div>
               <SkillComponent 
               imagen={Tailwind}
               tecnologia='TailwindCss'
-              />
-              <div className='div-animacion'>
-                <div className='animacion-seis'></div>
-              </div>
+              />            
             </div>
+
+            <div>
+              <SkillComponent 
+              imagen={TypeScipt}
+              tecnologia='TypeScipt'
+              />            
+            </div>
+
+            <div>
+              <SkillComponent 
+              imagen={Angular}
+              tecnologia='Angular'
+              />            
+            </div>
+
+            <div>
+              <SkillComponent 
+              imagen={Redux}
+              tecnologia='Redux'
+              />            
+            </div>
+
+            <div>
+              <SkillComponent 
+              imagen={Rxjs}
+              tecnologia='Rxjs'
+              />            
+            </div>
+
+
           </div>
         </div>
         </>

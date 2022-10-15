@@ -89,6 +89,11 @@
     grid-template-columns: 1fr ;
   }
 
+  .leaflet-container {
+    max-width: 700px;
+    height: 300px;
+  }
+
   .menu-destok-contact {
     display: none;
   }
